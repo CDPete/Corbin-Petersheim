@@ -6,7 +6,7 @@ interface Props {
   
   const Home = () => {
     return (
-        <div className="home-container">
+        <div className="home-container" id="page1">
             <div className="titlecard">
                 <h1 className="site-title">Hi, I'm Corbin Petersheim</h1>
                 <p className="intro">I'm an aspiring data scientist</p>

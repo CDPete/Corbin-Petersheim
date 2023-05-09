@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
-/***************************************************************/
-/*                          Colors                             */
-/***************************************************************/
+
 * {
+
+    /***************************************************************/
+    /*                          Colors                             */
+    /***************************************************************/
     --color-white: #fff;
     --color-gray: #f6f9fc;
-    /*
-    --color-greener-blue: #00c4c4;
-    --color-bluer-green: #19BED3;
-    --color-light-blue: #009deb;
-    --color-medium-blue: #0073e6;
-    --color-dark-blue: #003f7f;
-    --color-darkest-blue: #002c59;
-    --color-title: #0a2540;
-    --color-text: #425466;*/
     --color-black: #000;
-
     --color-darkest-green: #0b260a;
     --color-darker-green: #103910;
     --color-dark-green: #399F2E;
     --color-medium-green: #49b15f;
     --color-light-green: #62CD32;
     --color-lighter-green: #9de29c;
+    --color-mediumer-gray: #c6c6c6;
     --color-medium-gray: #D3D3D3;
     --color-dark-gray: #626363;
     --color-darker-gray: #2B2B2B;
     --color-title: #030c03;
     --color-text: #071907;
+
+
 }
 
 
@@ -48,19 +43,12 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+
+    /*       Responsive Sizing        */
+    font-size: calc(15px + 0.390625vw);
 }
 
 
-
-/*
-* {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-*/
 
 /***************************************************************/
 /*                          Header                             */
@@ -69,8 +57,8 @@ header {
     /*Font*/
     font-family: Montserrat, sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    letter-spacing: .1em;
+    font-size: 1rem;
+    letter-spacing: .1rem;
 
     /*Box*/
     width: 100%;
@@ -94,7 +82,7 @@ header {
 
 
 header a {
-    color: var(--color-white);
+    color: var(--color-mediumer-gray);
     font-weight: bold;
     text-decoration: None;
     padding: 0 20px 10px;
@@ -104,15 +92,15 @@ header a {
 }
 
 header a:hover {
-    color: var(--color-medium-gray);
+    color: var(--color-white);
     border-bottom: 2px solid var(--color-white);
     filter: drop-shadow(0 0 4px currentColor);
 
 }
 
-.lower {
-    padding-top: 10px;
-
+a.active {
+    border-bottom: 3px solid var(--color-white);
+    color: var(--color-white);
 }
 
 .burger {
@@ -139,7 +127,7 @@ header button {
         /*Font*/
         font-family: Montserrat, sans-serif;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
 
         /*Box*/
         width: 100%;
@@ -272,13 +260,13 @@ header button {
 
 .site-title {
     font-family: Garamond, serif;
-    font-size: 60px;
+    font-size: 3.5rem;
     color: var(--color-title);
 }
 
 .intro {
     font-family: 'Gill Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 10px 0;
 }
 
@@ -295,7 +283,7 @@ header button {
 .btn {
     /*background: linear-gradient(to right, var(--color-blue-light), var(--color-blue-medium));*/
     /*padding: 14px 40px;*/
-    font-size: 16px;
+    font-size: 1rem;
 
     display: block;
     background-color: var(--color-light-green);
@@ -348,7 +336,7 @@ header button {
 
 .page-title {
     font-family: Garamond, serif;
-    font-size: 50px;
+    font-size: 3rem;
     color: var(--color-title);
     text-align: center;
     padding-top: 70px;
@@ -397,7 +385,7 @@ header button {
 .column-title {
     text-align: center;
     font-family: Garamond, serif;
-    font-size: 32px;
+    font-size: 1.5rem;
     color: var(--color-title);
     padding-bottom: 20px;
     border-bottom: 3px dotted var(--color-medium-gray);
@@ -427,9 +415,9 @@ img:hover {
 .caption {
     display: block;
     font-family: 'Gill Sans', sans-serif;
-    font-size: 16px;
+    font-size: .85rem;
     font-weight: 400;
-    color: var(--color-dark-gray)
+    color: var(--color-text)
 }
 
 
@@ -459,7 +447,7 @@ img:hover {
 .s-style {
     text-align: center;
     font-family: Garamond, serif;
-    font-size: 24px;
+    font-size: 1.25rem;
     color: var(--color-title);
     border-right: 3px dotted var(--color-medium-gray);
 

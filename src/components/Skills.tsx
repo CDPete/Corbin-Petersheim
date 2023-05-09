@@ -22,7 +22,7 @@ interface Props {
 
 const Skills = () => {
   return (
-      <div className="skills-container">
+      <div className="skills-container" id="page3">
             <h2 className="page-title">Skills</h2>
             <div className="skills-wrapper">
               <div className="skills-wrapper-shrunk">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll'
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,28 +25,26 @@ const Navbar = ({faColor}: Props) => {
   
   <input type="checkbox" className="toggler"/>
   <div className="burger"><div></div></div>
-
-    <a onMouseEnter={() => faColor= "#4EC0E9"} onMouseLeave={() => faColor= "#ffffff" } className="lower horizontal-header" href='#'>
-      <FontAwesomeIcon icon={faHouseChimney} size="lg" style={{color: faColor,}} />
-    </a>
+    <nav className="horizontal-header">
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
+    </nav>
 
  
     
     
     <nav className="horizontal-header" >
-      <a href='#'>About</a>
-      <a href='#'>Skills</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Contact</a>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page2'>About</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page3'>Skills</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page4'>Projects</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page5'>Contact</Link>
     </nav>
 
     <nav className="vertical-header">
-      <a href='#'>About</a>
-      <a href='#'>About</a>
-      <a href='#'>Skills</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Contact</a>
-      <a href='#'>Miscellaneous</a>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page2'>About</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page3'>Skills</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page4'>Projects</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page5'>Contact</Link>
     </nav>
 
   </header>
