@@ -46,6 +46,7 @@ html {
 
     /*       Responsive Sizing        */
     font-size: calc(15px + 0.390625vw);
+
 }
 
 
@@ -74,9 +75,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 14px 0%;
-
-
+    padding: 1rem;
 }
 
 
@@ -85,22 +84,19 @@ header a {
     color: var(--color-mediumer-gray);
     font-weight: bold;
     text-decoration: None;
-    padding: 0 20px 10px;
-    transition: .1s ease-in-out;
+    padding: 0 20px .75rem;
+
 
 
 }
 
 header a:hover {
-    color: var(--color-white);
-    border-bottom: 2px solid var(--color-white);
-    filter: drop-shadow(0 0 4px currentColor);
-
+    color: var(--color-light-green);
 }
 
 a.active {
-    border-bottom: 3px solid var(--color-white);
-    color: var(--color-white);
+    border-bottom: 4px solid var(--color-light-green);
+    color: var(--color-light-green);
 }
 
 .burger {
@@ -122,14 +118,19 @@ header button {
     display: none;
 }
 
+nav {
+    cursor: pointer;
+}
+
+
 @media (max-width: 800px) {
     header {
-        /*Font*/
+
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         font-size: 1rem;
 
-        /*Box*/
+
         width: 100%;
         position: fixed;
         top: 0;
@@ -138,19 +139,10 @@ header button {
         z-index: 10000;
 
 
-
-        /*box-shadow: 0 1px 3px grey;*/
-
-
-
-
-        /*Display Spacing*/
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 10px 0%;
-
-
     }
 
     .horizontal-header {
@@ -225,6 +217,33 @@ header button {
         background: white;
     }
 
+
+    .vertical-header {
+        background-color: var(--color-darker-green);
+        color: var(--color-white);
+        height: 100vh;
+        width: 30%;
+        visibility: hidden;
+        transition: all .4s ease;
+    }
+
+    .toggler:checked~.vertical-header {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding-left: 10px;
+        top: 70px;
+        transition: visibility .4s ease;
+        transition-delay: .1s;
+        visibility: visible;
+
+
+
+
+    }
+
+
+
     /***********************************************************************/
 
     .btns {
@@ -232,6 +251,7 @@ header button {
     }
 
 }
+
 
 
 
@@ -339,9 +359,12 @@ header button {
     font-size: 3rem;
     color: var(--color-title);
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 10px;
+    padding-top: 3rem;
     letter-spacing: 5px;
+}
+
+.skill-assist {
+    padding-top: 5rem;
 }
 
 /***************************************************************/
