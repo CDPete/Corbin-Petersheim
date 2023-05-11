@@ -23,14 +23,9 @@ const Navbar = ({faColor}: Props) => {
   <header>
 
   
-  <input type="checkbox" className="toggler"/>
-  <div className="burger"><div></div></div>
     <nav className="horizontal-header">
       <Link activeClass="active" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
     </nav>
-
- 
-    
     
     <nav className="horizontal-header" >
       <Link activeClass="active" spy={true} smooth={true} duration={500} to='page2'>About</Link>
@@ -38,7 +33,10 @@ const Navbar = ({faColor}: Props) => {
       <Link activeClass="active" spy={true} smooth={true} duration={500} to='page4'>Projects</Link>
       <Link activeClass="active" spy={true} smooth={true} duration={500} to='page5'>Contact</Link>
     </nav>
+    
 
+    <input type="checkbox" className="toggler"/>
+    <div className="burger"><div></div></div>
     <nav className="vertical-header">
       <Link activeClass="none" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
       <Link activeClass="none" spy={true} smooth={true} duration={500} to='page2'>About</Link>

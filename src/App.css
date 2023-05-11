@@ -81,13 +81,10 @@ header {
 
 
 header a {
-    color: var(--color-mediumer-gray);
+    color: var(--color-white);
     font-weight: bold;
     text-decoration: None;
     padding: 0 20px .75rem;
-
-
-
 }
 
 header a:hover {
@@ -137,6 +134,7 @@ nav {
         right: 0;
         min-height: 47px;
         z-index: 10000;
+        opacity: .7;
 
 
         display: flex;
@@ -221,25 +219,20 @@ nav {
     .vertical-header {
         background-color: var(--color-darker-green);
         color: var(--color-white);
-        height: 100vh;
-        width: 30%;
-        visibility: hidden;
-        transition: all .4s ease;
+        height: 25vh;
+        width: 100vw;
+        margin-top: -4px;
+        left: 0px;
     }
 
     .toggler:checked~.vertical-header {
         display: flex;
         flex-direction: column;
         position: fixed;
-        padding-left: 10px;
         top: 70px;
         transition: visibility .4s ease;
         transition-delay: .1s;
         visibility: visible;
-
-
-
-
     }
 
 
@@ -383,7 +376,9 @@ nav {
 
 .skills-wrapper {
     display: block;
-    padding: 0px 80px 20px 80px;
+    padding: 0px 3rem 1rem 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-wrapper-shrunk {
@@ -424,10 +419,7 @@ img {
     box-shadow: 0 0 4px var(--color-dark-gray);
 }
 
-img:hover {
-    transform: scale(1.1);
 
-}
 
 .icon {
     vertical-align: top;
