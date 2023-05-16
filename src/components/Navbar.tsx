@@ -24,25 +24,25 @@ const Navbar = ({faColor}: Props) => {
 
   
     <nav className="horizontal-header">
-      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='home'>Home</Link>
     </nav>
     
     <nav className="horizontal-header" >
-      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page2'>About</Link>
-      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page3'>Skills</Link>
-      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page4'>Projects</Link>
-      <Link activeClass="active" spy={true} smooth={true} duration={500} to='page5'>Contact</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='about'>About</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='skills'>Skills</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='projects'>Projects</Link>
+      <Link activeClass="active" spy={true} smooth={true} duration={500} to='contact'>Contact</Link>
     </nav>
     
 
     <input type="checkbox" className="toggler"/>
     <div className="burger"><div></div></div>
     <nav className="vertical-header">
-      <Link activeClass="none" spy={true} smooth={true} duration={500} to='page1'>Home</Link>
-      <Link activeClass="none" spy={true} smooth={true} duration={500} to='page2'>About</Link>
-      <Link activeClass="none" spy={true} smooth={true} duration={500} to='page3'>Skills</Link>
-      <Link activeClass="none" spy={true} smooth={true} duration={500} to='page4'>Projects</Link>
-      <Link activeClass="none" spy={true} smooth={true} duration={500} to='page5'>Contact</Link>
+      <Link activeClass="none" spy={true} smooth={true} duration={500} to='home'>Home</Link>
+      <Link activeClass="none" spy={true} smooth={true} duration={500} to='about'>About</Link>
+      <Link activeClass="none" spy={true} smooth={true} duration={500} to='skills'>Skills</Link>
+      <Link activeClass="none" spy={true} smooth={true} duration={500} to='projects'>Projects</Link>
+      <Link activeClass="none" spy={true} smooth={true} duration={500} to='contact'>Contact</Link>
     </nav>
 
   </header>

@@ -20,49 +20,61 @@ interface Props {
 
 }
 
-const Skills = () => {
+const Skills_Test = () => {
   return (
-      <div className="skills-container" id="page3">
-            <h2 className="page-title skill-assist">Skills</h2>
-            <div className="skills-wrapper">
-              <div className="skills-wrapper-shrunk">
-                <div className="c1">
-                  <h2 className = "column-title">Stem</h2>
+      <div className="skills-container" id="skills">
+            <h2 className="page-title">Skills</h2>
+            <div className= "skills-outer-card">
+                <div className= "skills-inner-card">
+                    <div className = "row1">
+                        <div className="col1"><h2>Stem</h2></div>
+                        <div className= "col2"><h2>Leaf</h2></div>
+                    </div>
+                    <div className="row">
+                        <div className="col1"><h2 className = "s-style">Primary Languages</h2></div>
+                        <div className= "col2">
+                            <div className="icon"><div className="d-style"><img src={Python}></img><span className="caption">Python</span></div></div>
+                            <div className="icon"><div className="d-style"><img src={R}></img><span className="caption">R</span></div></div>
+                            <div className="icon"><div className="d-style"><img src={Stata}></img><span className="caption">Stata</span></div></div>
+                        </div>
+                    </div>
+                    <div className= "row">
+                        <div className="col1"><h2 className = "s-style">Machine Learning</h2></div>
+                        <div className= "col2">
+                            <div className="icon"><div className="d-style"><img src={Pandas}></img><span className="caption">Pandas</span></div></div>
+                            <div className="icon"><div className="d-style"><img src={Numpy}></img><span className="caption">Numpy</span></div></div>
+                            <div className="icon"><div className="d-style"><img src={Sklearn}></img><span className="caption">Sklearn</span></div></div>
+                            <div className="icon"><div className="d-style"><img src={Tensorflow}></img><span className="caption">Tensorflow</span></div></div>
+                        </div>
+                    </div>
+                    <div className= "row">
+                        <div className="col1"><h2 className = "s-style">Visualization</h2></div>
+                        <div className= "col2">
+                            <div className="icon"><div className="d9 d-style"><img src={Matplotlib}></img><span className="caption">Matplotlib</span></div></div>
+                            <div className="icon"><div className="d10 d-style"><img src={Seaborn}></img><span className="caption">Seaborn</span></div></div>
+                        </div>
+                    </div>
+                    <div className= "row">
+                        <div className="col1"><h2 className = "s-style">General</h2></div>
+                        <div className= "col2">
+                            <div className="icon"><div className="d14 d-style"><img src={Jupyter}></img><span className="caption">Jupyter</span></div></div>
+                            <div className="icon"><div className="d15 d-style"><img src={Colab}></img><span className="caption">Colab</span></div></div>
+                            <div className="icon"><div className="d13 d-style"><img src={Git}></img><span className="caption">Git</span></div></div>
+                        </div>
+                    </div>
+                    <div className= "row bottom">
+                        <div className="col1"><h2 className = "s-style">Web</h2></div>
+                        <div className= "col2">
+                            <div className="icon"><div className="d17 d-style"><img src={Html}></img><span className="caption">HTML</span></div></div>
+                            <div className="icon"><div className="d18 d-style"><img src={Css}></img><span className="caption">CSS</span></div></div>
+                            <div className="icon"><div className="d19 d-style"><img src={Typescript}></img><span className="caption">Typescript</span></div></div>
+                            <div className="icon"><div className="d20 d-style"><img src={Reactsymbol}></img><span className="caption">React</span></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div className="s1 s-style">Programming Languages</div>
-                <div className="s2 s-style">Machine Learning</div>
-                <div className="s3 s-style">Visualization</div>
-                <div className="s4 s-style">General</div>
-                <div className="s5 s-style">Web</div>
-                
-                <div className="c2">
-                  <h2 className = "column-title">Leaves</h2>
-                </div>
-                <div className="icon"><div className="d1 d-style"><img src={Python}></img><span className="caption">Python</span></div></div>
-                <div className="icon"><div className="d2 d-style"><img src={R}></img><span className="caption">R</span></div></div>
-                <div className="icon"><div className="d3 d-style"><img src={Stata}></img><span className="caption">Stata</span></div></div>
-                <div className="d4 d-style"></div>
-                <div className="icon"><div className="d5 d-style"><img src={Pandas}></img><span className="caption">Pandas</span></div></div>
-                <div className="icon"><div className="d6 d-style"><img src={Numpy}></img><span className="caption">Numpy</span></div></div>
-                <div className="icon"><div className="d7 d-style"><img src={Sklearn}></img><span className="caption">Sklearn</span></div></div>
-                <div className="icon"><div className="d8 d-style"><img src={Tensorflow}></img><span className="caption">Tensorflow</span></div></div>
-                <div className="icon"><div className="d9 d-style"><img src={Matplotlib}></img><span className="caption">Matplotlib</span></div></div>
-                <div className="icon"><div className="d10 d-style"><img src={Seaborn}></img><span className="caption">Seaborn</span></div></div>
-                <div className="d11 d-style"></div>
-                <div className="d12 d-style"></div>
-                <div className="icon"><div className="d13 d-style"><img src={Git}></img><span className="caption">Git</span></div></div>
-                <div className="icon"><div className="d14 d-style"><img src={Jupyter}></img><span className="caption">Jupyter</span></div></div>
-                <div className="icon"><div className="d15 d-style"><img src={Colab}></img><span className="caption">Colab</span></div></div>
-                <div className="d16 d-style"></div>
-                <div className="icon"><div className="d17 d-style"><img src={Html}></img><span className="caption">HTML</span></div></div>
-                <div className="icon"><div className="d18 d-style"><img src={Css}></img><span className="caption">CSS</span></div></div>
-                <div className="icon"><div className="d19 d-style"><img src={Typescript}></img><span className="caption">Typescript</span></div></div>
-                <div className="icon"><div className="d20 d-style"><img src={Reactsymbol}></img><span className="caption">React</span></div></div>
-              </div>
             </div>
-          
       </div>
   )
 };
 
-export default Skills;
+export default Skills_Test;
