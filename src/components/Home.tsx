@@ -14,7 +14,7 @@ interface Props {
                   <a className="link" href= {Pdf} target="_blank"><button className="btn">Resume</button></a>
                   
                   
-                  <a className="link" href="#"><button className="btn">Publications</button></a>
+                  <a className="link" href="https://orcid.org/0000-0002-5221-7418" target="_blank"><button className="btn">Publications</button></a>
                   
                 </div>
             </div>
